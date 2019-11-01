@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1571619585 source:d:\code\c_aes_pfe\main.cpp
+	<iostream>
+	<math.h>
+	<stdlib.h>
+	"lut.h"
+
+1571525860 d:\code\c_aes_pfe\lut.h
+
+1571704427 source:d:\code\c_aes_pfe\main_w32.cpp
+	<iostream>
+	<math.h>
+	<stdlib.h>
+	"lut.h"
+
+1572007105 source:c:\users\admin\documents\c_aes_pfe\main_w32.cpp
+	<iostream>
+	<math.h>
+	<stdlib.h>
+	"lut.h"
+
+1572007165 c:\users\admin\documents\c_aes_pfe\lut.h
+
+1572003506 source:e:\c_aes_pfe\main_w32.cpp
+	<iostream>
+	<math.h>
+	<stdlib.h>
+	"lut.h"
+
+1572003566 e:\c_aes_pfe\lut.h
+
+1572003506 source:d:\code\c&c++\c_aes_pfe\main_w32.cpp
+	<iostream>
+	<math.h>
+	<stdlib.h>
+	"lut.h"
+
+1572003566 d:\code\c&c++\c_aes_pfe\lut.h
+
+1572486285 source:d:\code\c&c++\c_aes_pfe\main_arr.cpp
+	<iostream>
+	<math.h>
+	<stdlib.h>
+	"lut.h"
+
