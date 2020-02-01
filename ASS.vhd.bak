@@ -1,0 +1,18 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity ASS is
+port(
+	ekey_k : in std_logic_vector(127 downto 0);
+	instate : in std_logic_vector(127 downto 0);
+	outstate : out std_logic_vector(127 downto 0)
+	
+);
+end ASS;
+
+ARCHITECTURE default of ASS is
+
+signal : in std_logic_vector(127 downto 0);
+

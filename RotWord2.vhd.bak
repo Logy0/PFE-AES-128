@@ -1,0 +1,32 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith.all;
+
+entity RotWord is 
+port(
+		input : in std_logic_vector(31 downto 0);
+		r_ena : in std_logic;
+		out_data : out std_logic_vector(31 downto 0)		
+);
+end RotWord;
+
+
+architecture rot_arch of RotWord is 
+
+SIGNAL B0 : std_logic_vector(7 downto 0);
+SIGNAL B1 : std_logic_vector(7 downto 0);
+SIGNAL B2 : std_logic_vector(7 downto 0);
+SIGNAL B3 : std_logic_vector(7 downto 0);
+
+begin
+
+B0<=input(7)&input(6)&input(5)&input(4)&input(3)&input(2)&input(1)&input(0);
+B1<=input(15)&input(14)&input(13)&input(12)&input(11)&input(10)&input(9)&input(8);
+B2<=input(23)&input(22)&input(21)&input(20)&input(19)&input(18)&input(17)&input(16);
+B3<=input(31)&input(30)&input(29)&input(28)&input(27)&input(26)&input(25)&input(24);
+
+out_data<=(B2&B1&B0&B3) when (r_ena='1')else
+			 input;
+	
+end rot_arch;

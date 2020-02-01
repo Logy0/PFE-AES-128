@@ -1,0 +1,38 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith.all;
+
+entity MixColumns is 
+port(
+	incol : in std_logic_vector(31 downto 0);
+	outcol : out std_logic_vector(31 downto 0)
+);
+
+end MixColumns;
+
+
+ARCHITECTURE default of MixColumns is
+
+
+
+component GLPLUT2
+port(
+	inval : in std_logic_vector(7 downto 0);
+	outval : out std_logic_vector(7 downto 0)
+);
+end component;
+
+component GLPLUT3
+port(
+	inval : in std_logic_vector(7 downto 0);
+	outval : out std_logic_vector(7 downto 0)
+);
+end component;
+
+
+BEGIN
+
+
+
+END default;
